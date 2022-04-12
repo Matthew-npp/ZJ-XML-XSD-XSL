@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified">
+<xs:element name="vojeske_vybaveni">
+<xs:complexType>
+<xs:sequence>
+  <xs:element name="pusky" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>    
+      <xs:sequence>
+        <xs:element name="oznaceni_pusky" type="xs:string"/>
+        <xs:element name="vyvinuto" type="roky"/>
+        <xs:element name="kalibr" type="xs:string"/>
+        <xs:element name="zasobnik" type="xs:integer"/>
+        <xs:element name="cena" type="xs:integer"/>
+        <xs:element name="vynalezce" type="xs:string"/>
+        <xs:element name="urceni" type="xs:string"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="kategorie" use="optional"/>
+      <xs:attribute type="xs:string" name="vyrobce" use="optional"/>      
+    </xs:complexType>
+  </xs:element>
+
+<xs:element name="noze" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>    
+      <xs:sequence>
+        <xs:element name="nazev" type="xs:string"/>
+        <xs:element name="material" type="xs:string"/>
+        <xs:element name="delka_cepele" type="xs:integer"/>        
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="kategorie" use="optional"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="lode" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>    
+      <xs:sequence>
+        <xs:element name="uvedeni_do_provozu" type="roky"/>
+        <xs:element name="vytlak" type="xs:integer"/>       
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="kategorie" use="optional"/>
+      <xs:attribute type="xs:string" name="typ" use="optional"/>
+      <xs:attribute type="xs:string" name="kodove_oznaceni" use="optional"/>      
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="tank" minOccurs="0" maxOccurs="unbounded">
+    <xs:complexType>        
+      <xs:sequence>
+        <xs:element name="oznaceni_tanku" type="xs:string"/>
+        <xs:element name="palivo" type="palivo"/>
+        <xs:element name="delo" type="xs:integer"/>
+        <xs:element name="rok_vyroby" type="roky"/>
+        <xs:element name="vaha" type="xs:string"/>
+        <xs:element name="posadka" type="posadka"/>
+      </xs:sequence>
+      <xs:attribute type="xs:string" name="kategorie" use="optional"/>    
+      <xs:attribute type="xs:string" name="zeme" use="optional"/>        
+    </xs:complexType>
+  </xs:element>
+
+  </xs:sequence>
+  </xs:complexType>
+ </xs:element> 
+
+ <xs:simpleType name="roky">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1900"/>
+    <xs:maxInclusive value="2022"/>
+  </xs:restriction>
+</xs:simpleType>
+
+ <xs:simpleType name="palivo">
+  <xs:restriction base="xs:string">
+    <xs:enumeration value="benzín"/>
+    <xs:enumeration value="plyn"/>
+    <xs:enumeration value="nafta"/>
+  </xs:restriction>
+</xs:simpleType>
+
+ <xs:simpleType name="posadka">
+  <xs:restriction base="xs:integer">
+    <xs:minInclusive value="1"/>
+    <xs:maxInclusive value="10"/>
+  </xs:restriction>
+</xs:simpleType>
+</xs:schema>

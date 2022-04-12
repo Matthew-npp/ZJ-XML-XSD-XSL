@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="transformace.xsl"?>
+<vojeske_vybaveni xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="schema.xsd">
+ 
+<pusky kategorie="Pušky" vyrobce="Knight's Armament Company">    
+    <oznaceni_pusky>SR-25</oznaceni_pusky>
+    <vyvinuto>1990</vyvinuto>
+    <kalibr>7.62x51</kalibr>
+    <zasobnik>20</zasobnik>
+    <cena>122500</cena> 
+    <vynalezce>Eugene Stoner</vynalezce> 
+    <urceni>Odtřelovací</urceni> 
+</pusky>
+
+<pusky kategorie="Pušky" vyrobce="Heckler Koch">    
+    <oznaceni_pusky>MP5</oznaceni_pusky>
+    <vyvinuto>1966</vyvinuto>
+    <kalibr>9mm</kalibr>
+    <zasobnik>30</zasobnik>
+    <cena>65000</cena> 
+    <vynalezce>Tilo Möller</vynalezce> 
+    <urceni>Samopal</urceni> 
+</pusky>
+
+<pusky kategorie="Pušky" vyrobce="Kalashnikov Concern">    
+    <oznaceni_pusky>AK-12</oznaceni_pusky>
+    <vyvinuto>2011</vyvinuto>
+    <kalibr>5.46x39mm</kalibr>
+    <zasobnik>30</zasobnik>
+    <cena>27000</cena> 
+    <vynalezce>Mikhail Kalashnikov</vynalezce> 
+    <urceni>Bojová puška</urceni> 
+</pusky>
+ 
+ <pusky kategorie="Pušky" vyrobce="Tula Arms Plant">    
+    <oznaceni_pusky>VSS Vintorez</oznaceni_pusky>
+    <vyvinuto>1980</vyvinuto>
+    <kalibr>9x39mm</kalibr>
+    <zasobnik>20</zasobnik>
+    <cena>66000</cena> 
+    <vynalezce>Vladimir Krasnikov</vynalezce> 
+    <urceni>Odstřelovací puška</urceni> 
+</pusky>
+
+<noze kategorie="Nože" >
+    <nazev>Mikov Uton 362</nazev>
+    <material>nerez. ocel</material>
+    <delka_cepele>14</delka_cepele>    
+</noze> 
+
+
+<lode kategorie="Lodě" typ="letadlova" kodove_oznaceni="USS Enterprise CV-6">
+    <uvedeni_do_provozu>1939</uvedeni_do_provozu>
+    <vytlak>25500</vytlak> 
+</lode> 
+<lode kategorie="Lodě" typ="bitevní" kodove_oznaceni="Třída Iowa">
+    <uvedeni_do_provozu>1943</uvedeni_do_provozu>
+    <vytlak>45000</vytlak> 
+</lode> 
+
+<tank kategorie="Tanky" zeme="USA">
+    <oznaceni_tanku>M4 Sherman</oznaceni_tanku>
+    <palivo>benzín</palivo>
+    <delo>75</delo>
+    <rok_vyroby>1941</rok_vyroby>
+    <vaha>30 T</vaha>
+    <posadka>5</posadka>
+</tank> 
+
+<tank kategorie="Tanky" zeme="Německo">
+    <oznaceni_tanku>Panzerkampfwagen VI Tiger</oznaceni_tanku>
+    <palivo>benzín</palivo>
+    <delo>88</delo>
+    <rok_vyroby>1942</rok_vyroby>
+    <vaha>57 T</vaha>
+    <posadka>5</posadka>
+</tank> 
+
+<tank kategorie="Tanky" zeme="USA">
+    <oznaceni_tanku>M1 Abrams</oznaceni_tanku>
+    <palivo>plyn</palivo>
+    <delo>105</delo>
+    <rok_vyroby>1996</rok_vyroby>
+    <vaha>63 T</vaha>
+    <posadka>4</posadka>
+</tank> 
+
+</vojeske_vybaveni>
+
