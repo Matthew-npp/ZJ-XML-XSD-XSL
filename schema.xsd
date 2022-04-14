@@ -7,15 +7,15 @@
     <xs:complexType>    
       <xs:sequence>
         <xs:element name="oznaceni_pusky" type="xs:string"/>
-        <xs:element name="vyvinuto" type="roky"/>
-        <xs:element name="kalibr" type="xs:string"/>
+        <xs:element name="vyvinuto" type="roky"/>      
+        <xs:group ref="kalibr"/>
         <xs:element name="zasobnik" type="xs:integer"/>
         <xs:element name="cena" type="xs:integer"/>
         <xs:element name="vynalezce" type="xs:string"/>
         <xs:element name="urceni" type="xs:string"/>
       </xs:sequence>
-      <xs:attribute type="xs:string" name="kategorie" use="optional"/>
-      <xs:attribute type="xs:string" name="vyrobce" use="optional"/>      
+      <xs:attribute type="xs:string" name="kategorie" use="required"/>
+      <xs:attribute type="xs:string" name="vyrobce" use="required"/>      
     </xs:complexType>
   </xs:element>
 
@@ -26,7 +26,7 @@
         <xs:element name="material" type="xs:string"/>
         <xs:element name="delka_cepele" type="xs:integer"/>        
       </xs:sequence>
-      <xs:attribute type="xs:string" name="kategorie" use="optional"/>
+      <xs:attribute type="xs:string" name="kategorie" use="required"/>
     </xs:complexType>
   </xs:element>
 
@@ -36,9 +36,9 @@
         <xs:element name="uvedeni_do_provozu" type="roky"/>
         <xs:element name="vytlak" type="xs:integer"/>       
       </xs:sequence>
-      <xs:attribute type="xs:string" name="kategorie" use="optional"/>
-      <xs:attribute type="xs:string" name="typ" use="optional"/>
-      <xs:attribute type="xs:string" name="kodove_oznaceni" use="optional"/>      
+      <xs:attribute type="xs:string" name="kategorie" use="required"/>
+      <xs:attribute type="xs:string" name="typ" use="required"/>
+      <xs:attribute type="xs:string" name="kodove_oznaceni" use="required"/>      
     </xs:complexType>
   </xs:element>
 
@@ -52,8 +52,8 @@
         <xs:element name="vaha" type="xs:string"/>
         <xs:element name="posadka" type="posadka"/>
       </xs:sequence>
-      <xs:attribute type="xs:string" name="kategorie" use="optional"/>    
-      <xs:attribute type="xs:string" name="zeme" use="optional"/>        
+      <xs:attribute type="xs:string" name="kategorie" use="required"/>    
+      <xs:attribute type="xs:string" name="zeme" use="required"/>        
     </xs:complexType>
   </xs:element>
 
@@ -61,6 +61,14 @@
   </xs:complexType>
  </xs:element> 
 
+<!-- skupina -->
+<xs:group name="kalibr">
+  <xs:sequence>
+    <xs:element name="prumer_naboje" type="xs:string"/>
+    <xs:element name="delka_naboje" type="xs:string"/>
+  </xs:sequence>
+</xs:group>
+<!-- vlastní datový typ -->
  <xs:simpleType name="roky">
   <xs:restriction base="xs:integer">
     <xs:minInclusive value="1900"/>

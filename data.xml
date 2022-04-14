@@ -5,7 +5,8 @@
 <pusky kategorie="Pušky" vyrobce="Knight's Armament Company">    
     <oznaceni_pusky>SR-25</oznaceni_pusky>
     <vyvinuto>1990</vyvinuto>
-    <kalibr>7.62x51</kalibr>
+    <prumer_naboje>7,62</prumer_naboje>
+    <delka_naboje>51</delka_naboje>
     <zasobnik>20</zasobnik>
     <cena>122500</cena> 
     <vynalezce>Eugene Stoner</vynalezce> 
@@ -15,7 +16,8 @@
 <pusky kategorie="Pušky" vyrobce="Heckler Koch">    
     <oznaceni_pusky>MP5</oznaceni_pusky>
     <vyvinuto>1966</vyvinuto>
-    <kalibr>9mm</kalibr>
+    <prumer_naboje>9</prumer_naboje>
+    <delka_naboje>19</delka_naboje>
     <zasobnik>30</zasobnik>
     <cena>65000</cena> 
     <vynalezce>Tilo Möller</vynalezce> 
@@ -25,7 +27,8 @@
 <pusky kategorie="Pušky" vyrobce="Kalashnikov Concern">    
     <oznaceni_pusky>AK-12</oznaceni_pusky>
     <vyvinuto>2011</vyvinuto>
-    <kalibr>5.46x39mm</kalibr>
+    <prumer_naboje>5,46</prumer_naboje>
+    <delka_naboje>39</delka_naboje>
     <zasobnik>30</zasobnik>
     <cena>27000</cena> 
     <vynalezce>Mikhail Kalashnikov</vynalezce> 
@@ -35,7 +38,8 @@
  <pusky kategorie="Pušky" vyrobce="Tula Arms Plant">    
     <oznaceni_pusky>VSS Vintorez</oznaceni_pusky>
     <vyvinuto>1980</vyvinuto>
-    <kalibr>9x39mm</kalibr>
+    <prumer_naboje>9</prumer_naboje>
+    <delka_naboje>39</delka_naboje>
     <zasobnik>20</zasobnik>
     <cena>66000</cena> 
     <vynalezce>Vladimir Krasnikov</vynalezce> 
